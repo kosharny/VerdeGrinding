@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DDE6797D2F43555E0079BE81 /* FirebaseAnalyticsCore in Frameworks */ = {isa = PBXBuildFile; productRef = DDE6797C2F43555E0079BE81 /* FirebaseAnalyticsCore */; };
+		DDE6797F2F43555E0079BE81 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = DDE6797E2F43555E0079BE81 /* FirebaseAuth */; };
+		DDE679812F43555E0079BE81 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = DDE679802F43555E0079BE81 /* FirebaseFirestore */; };
+		DDE679832F43555E0079BE81 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = DDE679822F43555E0079BE81 /* FirebaseMessaging */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		DDE6796D2F4354CD0079BE81 /* VerdeGrinding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VerdeGrinding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +30,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDE679832F43555E0079BE81 /* FirebaseMessaging in Frameworks */,
+				DDE6797D2F43555E0079BE81 /* FirebaseAnalyticsCore in Frameworks */,
+				DDE6797F2F43555E0079BE81 /* FirebaseAuth in Frameworks */,
+				DDE679812F43555E0079BE81 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +76,10 @@
 			);
 			name = VerdeGrinding;
 			packageProductDependencies = (
+				DDE6797C2F43555E0079BE81 /* FirebaseAnalyticsCore */,
+				DDE6797E2F43555E0079BE81 /* FirebaseAuth */,
+				DDE679802F43555E0079BE81 /* FirebaseFirestore */,
+				DDE679822F43555E0079BE81 /* FirebaseMessaging */,
 			);
 			productName = VerdeGrinding;
 			productReference = DDE6796D2F4354CD0079BE81 /* VerdeGrinding.app */;
@@ -94,6 +109,9 @@
 			);
 			mainGroup = DDE679642F4354CD0079BE81;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				DDE6797B2F43555E0079BE81 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = DDE6796E2F4354CD0079BE81 /* Products */;
 			projectDirPath = "";
@@ -256,11 +274,13 @@
 				DEVELOPMENT_TEAM = 7SJ46G89S2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We use data to display personalized content tailored to your preferences and interests, improving your overall experience within the application.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -269,12 +289,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kosharny.VerdeGrinding;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -288,11 +312,13 @@
 				DEVELOPMENT_TEAM = 7SJ46G89S2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We use data to display personalized content tailored to your preferences and interests, improving your overall experience within the application.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,12 +327,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kosharny.VerdeGrinding;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -332,6 +362,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DDE6797B2F43555E0079BE81 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DDE6797C2F43555E0079BE81 /* FirebaseAnalyticsCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DDE6797B2F43555E0079BE81 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsCore;
+		};
+		DDE6797E2F43555E0079BE81 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DDE6797B2F43555E0079BE81 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		DDE679802F43555E0079BE81 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DDE6797B2F43555E0079BE81 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		DDE679822F43555E0079BE81 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DDE6797B2F43555E0079BE81 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DDE679652F4354CD0079BE81 /* Project object */;
 }
