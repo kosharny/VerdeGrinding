@@ -1,0 +1,997 @@
+[
+    {
+        "id": "t001",
+        "title": "Botany Basics: The First Sprout",
+        "description": "Test your knowledge on the fundamental biology of germination. Understand how a tiny seed contains the blueprint for a giant tree.",
+        "imageName": "plant_avatar_stage_1",
+        "questions": [
+            {
+                "id": "q1",
+                "text": "What is the very first part of a plant to emerge from the seed?",
+                "options": [
+                    "The Epicotyl (Shoot)",
+                    "The Radicle (Primary Root)",
+                    "The Cotyledon (First Leaf)",
+                    "The Seed Coat"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "id": "q2",
+                "text": "What triggers the process of germination in most seeds?",
+                "options": [
+                    "Sunlight exposure",
+                    "Absorption of water (Imbibition)",
+                    "Presence of soil nutrients",
+                    "Wind"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "id": "q3",
+                "text": "Which plant hormone is primarily responsible for cell elongation and vertical growth?",
+                "options": [
+                    "Auxin",
+                    "Cytokinin",
+                    "Ethylene",
+                    "Abscisic Acid"
+                ],
+                "correctOptionIndex": 0
+            },
+            {
+                "id": "q4",
+                "text": "What is the main function of the cotyledon?",
+                "options": [
+                    "To protect the root",
+                    "To provide initial nutrients to the embryo",
+                    "To absorb sunlight immediately",
+                    "To attract pollinators"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "id": "q5",
+                "text": "True or False: All seeds need light to germinate.",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "correctOptionIndex": 1
+            }
+        ]
+    },
+    {
+        "id": "t002",
+        "title": "Habit Ecology: Environment",
+        "description": "Assess your understanding of how your environment shapes your habits. Are you planting in fertile soil or concrete?",
+        "imageName": "mossy_stone_texture",
+        "questions": [
+            {
+                "id": "q1",
+                "text": "Which of these is considered a 'keystone habit' that often triggers other good habits?",
+                "options": [
+                    "Checking email",
+                    "Making your bed",
+                    "Drinking coffee",
+                    "Watching news"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "id": "q2",
+                "text": "According to behavioral psychology, what is the best way to break a bad habit?",
+                "options": [
+                    "Willpower alone",
+                    "Removing the cue/trigger from your environment",
+                    "Punishing yourself",
+                    "Ignoring it"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "id": "q3",
+                "text": "What role does friction play in habit formation?",
+                "options": [
+                    "It increases motivation",
+                    "It should be increased for good habits",
+                    "It should be decreased for good habits and increased for bad ones",
+                    "It is irrelevant"
+                ],
+                "correctOptionIndex": 2
+            },
+            {
+                "id": "q4",
+                "text": "What is the 'Two Minute Rule'?",
+                "options": [
+                    "Wait two minutes before eating",
+                    "If a task takes less than two minutes, do it now",
+                    "Work for only two minutes",
+                    "Meditate for two minutes"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "id": "q5",
+                "text": "Which environment is best for deep focus?",
+                "options": [
+                    "A noisy cafe with distractions",
+                    "A dedicated, clutter-free workspace",
+                    "The living room with TV on",
+                    "A crowded bus"
+                ],
+                "correctOptionIndex": 1
+            }
+        ]
+    },
+    {
+        "id": "t003",
+        "title": "Photosynthesis & Focus",
+        "description": "Understand the parallels between how plants create energy and how humans create focus. A deep dive into productivity science.",
+        "imageName": "sunlight_beam_forest",
+        "questions": [
+            {
+                "id": "q1",
+                "text": "In the process of photosynthesis, what is the primary byproduct released by the plant?",
+                "options": [
+                    "Carbon Dioxide",
+                    "Oxygen",
+                    "Glucose",
+                    "Nitrogen"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "id": "q2",
+                "text": "What is the term for the state of peak focus where one loses track of time?",
+                "options": [
+                    "Zone Out",
+                    "Flow State",
+                    "Hyper-fixation",
+                    "Daydreaming"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "id": "q3",
+                "text": "Just as plants need darkness to respire, what does the human brain need to consolidate memory?",
+                "options": [
+                    "Caffeine",
+                    "Sleep",
+                    "Sugar",
+                    "Constant stimulation"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "id": "q4",
+                "text": "Which pigment absorbs light energy in plants?",
+                "options": [
+                    "Melanin",
+                    "Chlorophyll",
+                    "Carotene",
+                    "Hemoglobin"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "id": "q5",
+                "text": "Multitasking is most similar to which plant pruning concept?",
+                "options": [
+                    "Watering effectively",
+                    "Scattering resources to too many branches, weakening all",
+                    "Root growth",
+                    "Flowering"
+                ],
+                "correctOptionIndex": 1
+            }
+        ]
+    },
+    {
+        "id": "t004",
+        "title": "The Rare Plant Quiz",
+        "description": "How well do you know the legendary plants of the Verde universe? Only true connoisseurs will pass.",
+        "imageName": "rare_flower_red",
+        "questions": [
+            {
+                "id": "q1",
+                "text": "The 'Ember Orchid' is known to bloom only under which condition?",
+                "options": [
+                    "During a thunderstorm",
+                    "When exposed to extreme heat or passion",
+                    "Under a full moon",
+                    "In complete darkness"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "id": "q2",
+                "text": "What special property does the 'Crystal Succulent' possess?",
+                "options": [
+                    "It sings",
+                    "It becomes invisible",
+                    "It reflects the purity of intent/honesty",
+                    "It eats insects"
+                ],
+                "correctOptionIndex": 2
+            },
+            {
+                "id": "q3",
+                "text": "The 'Void Moss' grows best in an environment filled with what?",
+                "options": [
+                    "Noise",
+                    "Silence",
+                    "Water",
+                    "Light"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "id": "q4",
+                "text": "Which rare plant is rumored to grant visions of the future?",
+                "options": [
+                    "The Chronos Fern",
+                    "The Oracle Lily",
+                    "The Dream Vine",
+                    "The Star Cactus"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "id": "q5",
+                "text": "The 'Iron Root' symbolizes what virtue?",
+                "options": [
+                    "Flexibility",
+                    "Unbreaking Resilience",
+                    "Speed",
+                    "Beauty"
+                ],
+                "correctOptionIndex": 1
+            }
+        ]
+    },
+    {
+        "id": "t005",
+        "title": "Root Systems Deep Dive",
+        "description": "Explore the hidden world underground. Why do some plants survive storms while others fall?",
+        "imageName": "plant_avatar_stage_2",
+        "questions": [
+            {
+                "id": "q1",
+                "text": "What type of root system does a carrot have?",
+                "options": [
+                    "Fibrous root system",
+                    "Taproot system",
+                    "Aerial root system",
+                    "Rhizome"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "id": "q2",
+                "text": "In habit terms, what represents a 'Taproot'?",
+                "options": [
+                    "A core value or deep 'why'",
+                    "A surface level goal",
+                    "A strict schedule",
+                    "A social media post"
+                ],
+                "correctOptionIndex": 0
+            },
+            {
+                "id": "q3",
+                "text": "Mycorrhizal networks are fungal webs that help roots do what?",
+                "options": [
+                    "Absorb nutrients and communicate",
+                    "Store water",
+                    "Anchor to rocks",
+                    "Reproduce"
+                ],
+                "correctOptionIndex": 0
+            },
+            {
+                "id": "q4",
+                "text": "Fibrous root systems are excellent for...",
+                "options": [
+                    "Storing deep water",
+                    "Preventing soil erosion",
+                    "Reaching deep nutrients",
+                    "Growing tall trees"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "id": "q5",
+                "text": "Root hairs increase the root's ability to absorb water by...",
+                "options": [
+                    "Growing longer",
+                    "Increasing surface area",
+                    "Creating heat",
+                    "Attracting bugs"
+                ],
+                "correctOptionIndex": 1
+            }
+        ]
+    },
+    {
+        "id": "t006",
+        "title": "Water Wisdom",
+        "description": "Hydration is not just about drinking water. It's about flow. Test your understanding of fluid dynamics in life.",
+        "imageName": "water_droplet_macro",
+        "questions": [
+            {
+                "id": "q1",
+                "text": "What happens to a plant cell when it loses turgor pressure?",
+                "options": [
+                    "It bursts",
+                    "It becomes rigid",
+                    "It wilts",
+                    "It divides"
+                ],
+                "correctOptionIndex": 2
+            },
+            {
+                "id": "q2",
+                "text": "Over-watering a plant causes death primarily because...",
+                "options": [
+                    "The water is toxic",
+                    "The roots cannot get oxygen",
+                    "The plant gets too cold",
+                    "Fungi attack it"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "id": "q3",
+                "text": "In productivity, 'flow' is best achieved when the challenge level is...",
+                "options": [
+                    "Way below your skill level",
+                    "Way above your skill level",
+                    "Slightly above your current skill level",
+                    "Non-existent"
+                ],
+                "correctOptionIndex": 2
+            },
+            {
+                "id": "q4",
+                "text": "Which property of water allows it to move up a plant stem?",
+                "options": [
+                    "Gravity",
+                    "Capillary Action",
+                    "Magnetism",
+                    "Electricity"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "id": "q5",
+                "text": "What is the best sign that a plant needs water?",
+                "options": [
+                    "It looks sad",
+                    "The soil is dry 1-2 inches down",
+                    "It is Tuesday",
+                    "The leaves are shiny"
+                ],
+                "correctOptionIndex": 1
+            }
+        ]
+    },
+    {
+        "id": "t007",
+        "title": "Pruning & Minimalism",
+        "description": "The art of subtraction. Can you identify what needs to be cut for growth to occur?",
+        "imageName": "neon_leaf_veins",
+        "questions": [
+            {
+                "id": "q1",
+                "text": "What is the main purpose of pruning dead branches?",
+                "options": [
+                    "To make the tree look smaller",
+                    "To redirect energy to healthy growth",
+                    "To create firewood",
+                    "To stop the tree from growing"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "id": "q2",
+                "text": "What is 'Pareto's Principle' in the context of effort?",
+                "options": [
+                    "50% of work gives 50% of results",
+                    "80% of results come from 20% of efforts",
+                    "100% effort is required always",
+                    "Growth is linear"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "id": "q3",
+                "text": "Which plant often needs aggressive pruning to produce better fruit?",
+                "options": [
+                    "Grapevine",
+                    "Cactus",
+                    "Moss",
+                    "Palm tree"
+                ],
+                "correctOptionIndex": 0
+            },
+            {
+                "id": "q4",
+                "text": "In minimalism, what is the 'Packing Party' method?",
+                "options": [
+                    "Throwing a party",
+                    "Packing everything as if moving, then only unpacking what you use",
+                    "Buying new boxes",
+                    "Traveling constantly"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "id": "q5",
+                "text": "Deadheading is the process of...",
+                "options": [
+                    "Cutting the main stem",
+                    "Removing spent flowers to encourage new blooms",
+                    "Adding fertilizer",
+                    "Killing the plant"
+                ],
+                "correctOptionIndex": 1
+            }
+        ]
+    },
+    {
+        "id": "t008",
+        "title": "Light & Circadian Rhythms",
+        "description": "How light affects biology. From the sun to your smartphone screen.",
+        "imageName": "emerald_glow_bg",
+        "questions": [
+            {
+                "id": "q1",
+                "text": "Blue light suppresses the production of which sleep hormone?",
+                "options": [
+                    "Serotonin",
+                    "Dopamine",
+                    "Melatonin",
+                    "Cortisol"
+                ],
+                "correctOptionIndex": 2
+            },
+            {
+                "id": "q2",
+                "text": "Which color of light is generally considered most restful for the human eye?",
+                "options": [
+                    "Red",
+                    "Blue",
+                    "Green",
+                    "Yellow"
+                ],
+                "correctOptionIndex": 2
+            },
+            {
+                "id": "q3",
+                "text": "Phototropism is the phenomenon where plants grow towards...",
+                "options": [
+                    "Gravity",
+                    "Water",
+                    "Light",
+                    "Touch"
+                ],
+                "correctOptionIndex": 2
+            },
+            {
+                "id": "q4",
+                "text": "What is the best lighting for reading at night to avoid disrupting sleep?",
+                "options": [
+                    "Bright white LED",
+                    "Warm / Reddish light",
+                    "Blue light",
+                    "Strobe light"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "id": "q5",
+                "text": "Plants that need 'Low Light' usually naturally grow...",
+                "options": [
+                    "On mountain tops",
+                    "On the forest floor",
+                    " In the desert",
+                    "Underwater"
+                ],
+                "correctOptionIndex": 1
+            }
+        ]
+    },
+    {
+        "id": "t009",
+        "title": "Soil Composition Masterclass",
+        "description": "Learn about the N-P-K ratio and how to balance the nutrients in your life.",
+        "imageName": "mossy_stone_texture",
+        "questions": [
+            {
+                "id": "q1",
+                "text": "In fertilizer N-P-K ratings, what does the 'N' stand for?",
+                "options": [
+                    "Nickel",
+                    "Nitrogen",
+                    "Neon",
+                    "Nuance"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "id": "q2",
+                "text": "Nitrogen is primarily responsible for the growth of which plant part?",
+                "options": [
+                    "Roots",
+                    "Flowers/Fruit",
+                    "Leaves/Foliage",
+                    "Seeds"
+                ],
+                "correctOptionIndex": 2
+            },
+            {
+                "id": "q3",
+                "text": "Phosphorus (P) is crucial for...",
+                "options": [
+                    "Root development and flowering",
+                    "Green color",
+                    "Stem thickness",
+                    "Pest resistance"
+                ],
+                "correctOptionIndex": 0
+            },
+            {
+                "id": "q4",
+                "text": "Potassium (K) helps plants withstand...",
+                "options": [
+                    "Compliments",
+                    "Stress, disease, and cold",
+                    "Sunlight",
+                    "Gravity"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "id": "q5",
+                "text": "What is 'Loam'?",
+                "options": [
+                    "A type of foam",
+                    "Ideal soil mixture of sand, silt, and clay",
+                    "Pure clay",
+                    "Pure sand"
+                ],
+                "correctOptionIndex": 1
+            }
+        ]
+    },
+    {
+        "id": "t010",
+        "title": "The Stress Test",
+        "description": "Understand the difference between Eustress (good stress) and Distress (bad stress).",
+        "imageName": "plant_avatar_stage_3",
+        "questions": [
+            {
+                "id": "q1",
+                "text": "Trees that grow in windless biodomes often fall over because...",
+                "options": [
+                    "They get bored",
+                    "They lack 'reaction wood' developed from wind stress",
+                    "The soil is too soft",
+                    "They grow too tall"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "id": "q2",
+                "text": "What is the term for 'good stress' that promotes growth?",
+                "options": [
+                    "Distress",
+                    "Eustress",
+                    "Mistress",
+                    "De-stress"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "id": "q3",
+                "text": "Which adaptability feature allows succulents to survive drought?",
+                "options": [
+                    "Big leaves",
+                    "Fast growth",
+                    "Water storage tissues",
+                    "Deep roots only"
+                ],
+                "correctOptionIndex": 2
+            },
+            {
+                "id": "q4",
+                "text": "Hormesis is the concept that...",
+                "options": [
+                    "Stress is always bad",
+                    "Small doses of stressors can strengthen an organism",
+                    "Plants have hormones",
+                    "Growth is infinite"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "id": "q5",
+                "text": "When transplanting a plant, 'Transplant Shock' can be minimized by...",
+                "options": [
+                    "Shaking the roots violently",
+                    "Keeping the root ball intact and watering well",
+                    "Leaving it in the sun immediately",
+                    "Not watering it"
+                ],
+                "correctOptionIndex": 1
+            }
+        ]
+    },
+    {
+        "id": "t011",
+        "title": "Symbiosis & Relationships",
+        "description": "No plant grows alone. Test your knowledge on how organisms interact.",
+        "imageName": "onboarding_slide_3",
+        "questions": [
+            {
+                "id": "q1",
+                "text": "What is Mutualism?",
+                "options": [
+                    "One benefits, one is harmed",
+                    "Both species benefit",
+                    "One benefits, the other is unaffected",
+                    "Both obtain nothing"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "id": "q2",
+                "text": "Lichens are a symbiotic partnership between a fungus and an...",
+                "options": [
+                    "Animal",
+                    "Algae (or cyanobacteria)",
+                    "Insect",
+                    "Tree"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "id": "q3",
+                "text": "In human relationships, 'parasitism' would be...",
+                "options": [
+                    "A balanced friendship",
+                    "One person taking energy without giving back",
+                    "Two people ignoring each other",
+                    "A business partnership"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "id": "q4",
+                "text": "Which of these is an example of Commensalism (one benefits, one unaffected)?",
+                "options": [
+                    "A bird building a nest in a tree",
+                    "A tick on a dog",
+                    "Bees pollinating flowers",
+                    "Lions eating zebras"
+                ],
+                "correctOptionIndex": 0
+            },
+            {
+                "id": "q5",
+                "text": "Alleloapthy is when a plant...",
+                "options": [
+                    "Helps other plants grow",
+                    "Releases chemicals to inhibit neighboring growth",
+                    "Dies gracefully",
+                    "Changes color"
+                ],
+                "correctOptionIndex": 1
+            }
+        ]
+    },
+    {
+        "id": "t012",
+        "title": "The Infinite Game",
+        "description": "Botanical philosophy on longevity versus speed.",
+        "imageName": "botany_book_cover",
+        "questions": [
+            {
+                "id": "q1",
+                "text": "Who coined the term 'The Infinite Game'?",
+                "options": [
+                    "Simon Sinek (popularized)",
+                    "James Carse (originated)",
+                    "Both are correct",
+                    "Neither"
+                ],
+                "correctOptionIndex": 2
+            },
+            {
+                "id": "q2",
+                "text": "An annual plant completes its life cycle in...",
+                "options": [
+                    "One year/season",
+                    "Two years",
+                    "Many years",
+                    "Decades"
+                ],
+                "correctOptionIndex": 0
+            },
+            {
+                "id": "q3",
+                "text": "A perennial plant lives for...",
+                "options": [
+                    "Only one summer",
+                    "More than two years",
+                    "Only in winter",
+                    "Forever"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "id": "q4",
+                "text": "In an Infinite Game, the goal is to...",
+                "options": [
+                    "Win",
+                    "Beat the competition",
+                    "Keep playing",
+                    "End the game"
+                ],
+                "correctOptionIndex": 2
+            },
+            {
+                "id": "q5",
+                "text": "Which tree species is known for living thousands of years?",
+                "options": [
+                    "Bristlecone Pine",
+                    "Sunflower",
+                    "Cherry Blossom",
+                    "Palm Tree"
+                ],
+                "correctOptionIndex": 0
+            }
+        ]
+    },
+    {
+        "id": "t013",
+        "title": "Pest Control: Bad Habits",
+        "description": "Identify the common pests in your mental garden.",
+        "imageName": "game_plant_target_1",
+        "questions": [
+            {
+                "id": "q1",
+                "text": "What is the best organic way to control aphids (small pests)?",
+                "options": [
+                    "Nuclear waste",
+                    "Ladybugs (natural predators)",
+                    "Yelling at them",
+                    "Ignoring them"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "id": "q2",
+                "text": "Procrastination is often a symptom of...",
+                "options": [
+                    "Laziness",
+                    "Fear of failure or overwhelm",
+                    "Too much energy",
+                    "Hunger"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "id": "q3",
+                "text": "What is 'Imposter Syndrome'?",
+                "options": [
+                    "A viral infection",
+                    "Feeling like a fraud despite success",
+                    "Being overly confident",
+                    "Forgetting your name"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "id": "q4",
+                "text": "Neem Oil is used in gardening as a...",
+                "options": [
+                    "Fertilizer",
+                    "Natural pesticide/fungicide",
+                    "Perfume",
+                    "Drink"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "id": "q5",
+                "text": "In habit formation, 'temptation bundling' means...",
+                "options": [
+                    "Avoiding all temptation",
+                    "Pairing a want-to-do action with a need-to-do action",
+                    "Buying bundles of things",
+                    "Eating cake while running"
+                ],
+                "correctOptionIndex": 1
+            }
+        ]
+    },
+    {
+        "id": "t014",
+        "title": "The Art of Patience",
+        "description": "Test your understanding of time. Can you wait for the bloom?",
+        "imageName": "glass_lab_flask",
+        "questions": [
+            {
+                "id": "q1",
+                "text": "Which tree is known for growing the slowest but producing very hard wood?",
+                "options": [
+                    "Poplar",
+                    "Willow",
+                    "Oak",
+                    "Bamboo"
+                ],
+                "correctOptionIndex": 2
+            },
+            {
+                "id": "q2",
+                "text": "The Marshmallow Test was a famous experiment about...",
+                "options": [
+                    "Cooking skills",
+                    "Delayed gratification",
+                    "Sugar tolerance",
+                    "Camping"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "id": "q3",
+                "text": "Bamboo can grow up to how much in a single day (after years of root growth)?",
+                "options": [
+                    "1 inch",
+                    "1 centimeter",
+                    "3 feet (approx 90cm)",
+                    "10 feet"
+                ],
+                "correctOptionIndex": 2
+            },
+            {
+                "id": "q4",
+                "text": "What is 'compound interest' often compared to in self-improvement?",
+                "options": [
+                    "A scam",
+                    "The snowball effect of small habits",
+                    "Losing money",
+                    "Gambling"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "id": "q5",
+                "text": "Stratification is a process where seeds need...",
+                "options": [
+                    "To be burned",
+                    "To go through a cold period (winter) before sprouting",
+                    "To be eaten",
+                    "To be crushed"
+                ],
+                "correctOptionIndex": 1
+            }
+        ]
+    },
+    {
+        "id": "t015",
+        "title": "Verde Master Certification",
+        "description": "The final exam before you are considered a true Lab Assistant.",
+        "imageName": "theme_forest_preview",
+        "questions": [
+            {
+                "id": "q1",
+                "text": "What is the primary currency of growth in Verde?",
+                "options": [
+                    "Gold coins",
+                    "Consistency",
+                    "Speed",
+                    "Luck"
+                ],
+                "correctOptionIndex": 1
+            },
+            {
+                "id": "q2",
+                "text": "Which plant type represents bad habits that must be removed?",
+                "options": [
+                    "Weed",
+                    "Flower",
+                    "Tree",
+                    "Fern"
+                ],
+                "correctOptionIndex": 0
+            },
+            {
+                "id": "q3",
+                "text": "Why do we use dark themes in the laboratory?",
+                "options": [
+                    "To look cool",
+                    "To save battery",
+                    "To reduce eye strain and promote focus",
+                    "Because we ran out of white paint"
+                ],
+                "correctOptionIndex": 2
+            },
+            {
+                "id": "q4",
+                "text": "What is the ultimate goal of the Verde Grinding system?",
+                "options": [
+                    "To play a game",
+                    "To waste time",
+                    "To cultivate a better self through daily consistent actions",
+                    "To grow virtual plants only"
+                ],
+                "correctOptionIndex": 2
+            },
+            {
+                "id": "q5",
+                "text": "True or False: A dead plant in Verde basically means you failed forever.",
+                "options": [
+                    "True",
+                    "False - It's a lesson. Compost it and start again."
+                ],
+                "correctOptionIndex": 1
+            }
+        ]
+    },
+    {
+        "id": "test_pm_1",
+        "title": "Plant Personality Match",
+        "description": "Find out which plant suits your lifestyle best.",
+        "imageName": "person.crop.circle.badge.questionmark",
+        "type": "personalityMatch",
+        "rewardXP": 100,
+        "isCompleted": false,
+        "questions": [
+            {
+                "id": "q1",
+                "text": "How often are you home to water plants?",
+                "options": [
+                    "Every day",
+                    "Once a week",
+                    "I forget for weeks"
+                ],
+                "correctOptionIndex": 0,
+                "personalityImpact": {
+                    "HighMaintenance": 2,
+                    "LowMaintenance": 0,
+                    "Succulent": 2
+                }
+            },
+            {
+                "id": "q2",
+                "text": "How much light does your room get?",
+                "options": [
+                    "Bright direct sun",
+                    "Indirect bright light",
+                    "Low light / darker corner"
+                ],
+                "correctOptionIndex": 0,
+                "personalityImpact": {
+                    "SunLover": 2,
+                    "ShadeLover": 2
+                }
+            },
+            {
+                "id": "q3",
+                "text": "Are you looking for a flowering plant or just leafy greens?",
+                "options": [
+                    "Flowers please!",
+                    "Just distinct leaves",
+                    "I don't care"
+                ],
+                "correctOptionIndex": 0,
+                "personalityImpact": {
+                    "Flowering": 2,
+                    "Foliage": 2
+                }
+            }
+        ]
+    }
+]
