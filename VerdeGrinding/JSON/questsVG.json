@@ -1,0 +1,137 @@
+[
+    {
+        "id": "q001",
+        "title": "First Sprout",
+        "description": "Welcome to the lab. Your first task is simple: plant your first seed and give it a name. This marks the beginning of your journey.",
+        "difficulty": "Easy",
+        "rewardXP": 50,
+        "requiredPlantId": "p001",
+        "isCompleted": false
+    },
+    {
+        "id": "q002",
+        "title": "Water of Life",
+        "description": "Hydration is key. Log your water intake for the day in the Journal. Your plants are thirsty, and so are you.",
+        "difficulty": "Easy",
+        "rewardXP": 60,
+        "requiredPlantId": null,
+        "isCompleted": false
+    },
+    {
+        "id": "q003",
+        "title": "The Daily Log",
+        "description": "Consistency builds empires. Create your first Journal Entry. Write about your goals for this week.",
+        "difficulty": "Medium",
+        "rewardXP": 100,
+        "requiredPlantId": null,
+        "isCompleted": false
+    },
+    {
+        "id": "q004",
+        "title": "Weed Patrol",
+        "description": "A wild Toxic Briar has appeared! Play the Mini Game and tap 10 bad habits to clear the garden.",
+        "difficulty": "Easy",
+        "rewardXP": 80,
+        "requiredPlantId": "p011",
+        "isCompleted": false
+    },
+    {
+        "id": "q005",
+        "title": "Knowledge Seeker",
+        "description": "Read one article about 'Rare Plant Care' in the Home tab. Knowledge allows your garden to flourish.",
+        "difficulty": "Easy",
+        "rewardXP": 70,
+        "requiredPlantId": null,
+        "isCompleted": false
+    },
+    {
+        "id": "q006",
+        "title": "Test Your Mettle",
+        "description": "Complete the 'Botany Basics' test with a 100% score. Prove you are worthy of the Green Thumb title.",
+        "difficulty": "Hard",
+        "rewardXP": 150,
+        "requiredPlantId": null,
+        "isCompleted": false
+    },
+    {
+        "id": "q007",
+        "title": "Neon Dreams",
+        "description": "Unlock the Neon Ivy plant. It requires you to reach a streak of 3 days. Can you keep the lights on?",
+        "difficulty": "Medium",
+        "rewardXP": 120,
+        "requiredPlantId": "p003",
+        "isCompleted": false
+    },
+    {
+        "id": "q008",
+        "title": "Master Gardener",
+        "description": "Level up your Lumina Sprout to its maximum stage (Level 3). This requires dedication and time.",
+        "difficulty": "Hard",
+        "rewardXP": 200,
+        "requiredPlantId": "p001",
+        "isCompleted": false
+    },
+    {
+        "id": "q009",
+        "title": "Social Butterfly",
+        "description": "Check the Global Statistics in the Stats tab. How does your garden compare to the worldwide laboratory?",
+        "difficulty": "Easy",
+        "rewardXP": 50,
+        "requiredPlantId": null,
+        "isCompleted": false
+    },
+    {
+        "id": "q010",
+        "title": "Hidden Gem",
+        "description": "Unlock the Crystal Succulent by writing 5 honest journal entries. Truth is the best fertilizer.",
+        "difficulty": "Medium",
+        "rewardXP": 110,
+        "requiredPlantId": "p004",
+        "isCompleted": false
+    },
+    {
+        "id": "q011",
+        "title": "Night Shift",
+        "description": "Log an activity after 8 PM. The Shadow Fern grows best in the moonlight.",
+        "difficulty": "Medium",
+        "rewardXP": 90,
+        "requiredPlantId": "p002",
+        "isCompleted": false
+    },
+    {
+        "id": "q012",
+        "title": "Premium Taste",
+        "description": "Preview the Forest Pro theme in Settings. Imagine how lush your garden could look.",
+        "difficulty": "Easy",
+        "rewardXP": 40,
+        "requiredPlantId": null,
+        "isCompleted": false
+    },
+    {
+        "id": "q013",
+        "title": "Streak Master",
+        "description": "Maintain a 7-day login streak. The Iron Root demands your daily presence.",
+        "difficulty": "Hard",
+        "rewardXP": 300,
+        "requiredPlantId": "p008",
+        "isCompleted": false
+    },
+    {
+        "id": "q014",
+        "title": "Zen Master",
+        "description": "Spend 60 seconds in the Game View without tapping anything, just watching the garden breathe (conceptually). Or just score 0 points to relax.",
+        "difficulty": "Medium",
+        "rewardXP": 100,
+        "requiredPlantId": "p006",
+        "isCompleted": false
+    },
+    {
+        "id": "q015",
+        "title": "The Collector",
+        "description": "Unlock 5 different plant species in your collection. Biodiversity is key to a healthy ecosystem.",
+        "difficulty": "Can be Hard",
+        "rewardXP": 250,
+        "requiredPlantId": null,
+        "isCompleted": false
+    }
+]

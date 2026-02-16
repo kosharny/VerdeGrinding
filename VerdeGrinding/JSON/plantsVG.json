@@ -1,0 +1,167 @@
+[
+  {
+    "id": "p001",
+    "name": "Lumina Sprout",
+    "scientificName": "Lux herba primus",
+    "description": "A beginner's plant that emits a faint, comforting glow. It thrives on small daily victories and consistent waterings. Legend says it was the first plant to ever grow in the bio-labs of Verde.",
+    "rarity": "common",
+    "type": "habit",
+    "maxLevel": 3,
+    "stages": ["plant_avatar_stage_1", "plant_avatar_stage_2", "plant_avatar_stage_3"],
+    "unlockCondition": "None"
+  },
+  {
+    "id": "p002",
+    "name": "Shadow Fern",
+    "scientificName": "Umbra filix",
+    "description": "Grows in the darker corners of the laboratory. It absorbs stress and anxiety, converting them into dark, rich oxygen. Requires patience and calm handling.",
+    "rarity": "common",
+    "type": "habit",
+    "maxLevel": 3,
+    "stages": ["plant_avatar_stage_1", "plant_avatar_stage_2", "plant_avatar_stage_3"],
+    "unlockCondition": "Reach Level 2"
+  },
+  {
+    "id": "p003",
+    "name": "Neon Ivy",
+    "scientificName": "Neon hedera",
+    "description": "An aggressive climber with veins that pulse with electric green light. It symbolizes rapid growth and ambition. Keep it trimmed, or it might take over your entire greenhouse.",
+    "rarity": "rare",
+    "type": "habit",
+    "maxLevel": 4,
+    "stages": ["plant_avatar_stage_1", "plant_avatar_stage_2", "plant_avatar_stage_3"],
+    "unlockCondition": "Complete 5 Quests"
+  },
+  {
+    "id": "p004",
+    "name": "Crystal Succulent",
+    "scientificName": "Crystallus aloe",
+    "description": "Its leaves are transparent and hard as diamonds. It reflects the purity of your intent. Only grows when you are perfectly honest with your daily journal entries.",
+    "rarity": "rare",
+    "type": "habit",
+    "maxLevel": 4,
+    "stages": ["plant_avatar_stage_1", "plant_avatar_stage_2", "plant_avatar_stage_3"],
+    "unlockCondition": "Write 10 Journal Entries"
+  },
+  {
+    "id": "p005",
+    "name": "Ember Orchid",
+    "scientificName": "Ignis orchis",
+    "description": "Warm to the touch, this flower blooms in bursts of heat. It represents passion and drive. Don't let its fire go out, or it turns into cold ash.",
+    "rarity": "legendary",
+    "type": "habit",
+    "maxLevel": 5,
+    "stages": ["plant_avatar_stage_1", "plant_avatar_stage_2", "plant_avatar_stage_3"],
+    "unlockCondition": "Premium Theme Unlocked"
+  },
+  {
+    "id": "p006",
+    "name": "Void Moss",
+    "scientificName": "Vacuum bryum",
+    "description": "A strange, velvety moss that seems to absorb light. It thrives on silence and meditation. Perfect for the corner of your digital garden where you seek peace.",
+    "rarity": "common",
+    "type": "habit",
+    "maxLevel": 2,
+    "stages": ["plant_avatar_stage_1", "plant_avatar_stage_2", "plant_avatar_stage_3"],
+    "unlockCondition": "None"
+  },
+  {
+    "id": "p007",
+    "name": "Azure Lily",
+    "scientificName": "Caeruleum lilium",
+    "description": "Floating on invisible water, this lily sings a quiet melody when you are productive. A favorite among the ancient hydroponic gardeners.",
+    "rarity": "rare",
+    "type": "habit",
+    "maxLevel": 4,
+    "stages": ["plant_avatar_stage_1", "plant_avatar_stage_2", "plant_avatar_stage_3"],
+    "unlockCondition": "Pass 5 Tests"
+  },
+  {
+    "id": "p008",
+    "name": "Iron Root",
+    "scientificName": "Ferrum radix",
+    "description": "As unyielding as steel, this plant represents discipline. It grows slowly but cannot be destroyed by normal means. Build your foundation upon it.",
+    "rarity": "common",
+    "type": "habit",
+    "maxLevel": 5,
+    "stages": ["plant_avatar_stage_1", "plant_avatar_stage_2", "plant_avatar_stage_3"],
+    "unlockCondition": "Log in 7 days in a row"
+  },
+  {
+    "id": "p009",
+    "name": "Golden Bonsai",
+    "scientificName": "Aurum arbor",
+    "description": "A miniature tree with leaves of pure gold foil. It brings prosperity and focus to those who trim it daily. A symbol of wealth in spirit and mind.",
+    "rarity": "legendary",
+    "type": "habit",
+    "maxLevel": 5,
+    "stages": ["plant_avatar_stage_1", "plant_avatar_stage_2", "plant_avatar_stage_3"],
+    "unlockCondition": "Reach Level 10"
+  },
+  {
+    "id": "p010",
+    "name": "Whispering Willow",
+    "scientificName": "Susurrus salix",
+    "description": "Its long tendrils sway without wind. If you listen closely, it whispers secrets about productivity and time management. A gossip, but a useful one.",
+    "rarity": "exotic",
+    "type": "habit",
+    "maxLevel": 5,
+    "stages": ["plant_avatar_stage_1", "plant_avatar_stage_2", "plant_avatar_stage_3"],
+    "unlockCondition": "Complete 'The Whisperer' Quest"
+  },
+  {
+    "id": "p011",
+    "name": "Toxic Briar",
+    "scientificName": "Venenum sentis",
+    "description": "A manifestation of procrastination. It has sharp thorns that prick your motivation. Shrink this weed by completing tasks on time.",
+    "rarity": "common",
+    "type": "weed",
+    "maxLevel": 1,
+    "stages": ["plant_avatar_dead", "plant_avatar_dead", "plant_avatar_dead"],
+    "unlockCondition": "None"
+  },
+  {
+    "id": "p012",
+    "name": "Sloth Vine",
+    "scientificName": "Pigritia vitis",
+    "description": "A heavy, sluggish vine that drags down other plants. It grows when you skip your habits. Prune it aggressively!",
+    "rarity": "common",
+    "type": "weed",
+    "maxLevel": 1,
+    "stages": ["plant_avatar_dead", "plant_avatar_dead", "plant_avatar_dead"],
+    "unlockCondition": "None"
+  },
+  {
+    "id": "p013",
+    "name": "Chaos Thistle",
+    "scientificName": "Chao carduus",
+    "description": "Spiky and unpredictable. It appears when your schedule is messy. Order and routine are the only herbicides that work against it.",
+    "rarity": "rare",
+    "type": "weed",
+    "maxLevel": 1,
+    "stages": ["plant_avatar_dead", "plant_avatar_dead", "plant_avatar_dead"],
+    "unlockCondition": "None"
+  },
+  {
+    "id": "p014",
+    "name": "Prism Lotus",
+    "scientificName": "Prisma lotus",
+    "description": "Refracts light into beautiful rainbows. It represents creativity and out-of-the-box thinking. Feeds on sketches and heavy brainstorming sessions.",
+    "rarity": "exotic",
+    "type": "habit",
+    "maxLevel": 5,
+    "stages": ["plant_avatar_stage_1", "plant_avatar_stage_2", "plant_avatar_stage_3"],
+    "unlockCondition": "Purchase Neon Theme"
+  },
+  {
+    "id": "p015",
+    "name": "Spectral Bamboo",
+    "scientificName": "Spectrum bambusa",
+    "description": "Ghostly shoots that grow overnight. They symbolize spiritual growth and resilience. They can withstand the strongest emotional storms.",
+    "rarity": "rare",
+    "type": "habit",
+    "maxLevel": 4,
+    "stages": ["plant_avatar_stage_1", "plant_avatar_stage_2", "plant_avatar_stage_3"],
+    "unlockCondition": "Meditate 5 times"
+  }
+]
