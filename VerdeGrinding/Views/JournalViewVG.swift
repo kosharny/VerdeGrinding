@@ -1,4 +1,5 @@
 import SwiftUI
+import PhotosUI
 
 struct JournalViewVG: View {
     @EnvironmentObject var viewModel: ViewModelVG
@@ -28,7 +29,7 @@ struct JournalViewVG: View {
                             .padding(.top)
                             
                             LazyVStack(spacing: 15) {
-                                ForEach(viewModel.journalEntries.reversed()) { entry in
+                                ForEach(viewModel.sortedJournalEntries) { entry in
                                     JournalEntryCard(entry: entry)
                                 }
                                 if viewModel.journalEntries.isEmpty {
@@ -98,7 +99,7 @@ struct JournalViewVG: View {
             }
         }
         .sheet(isPresented: $showEntrySheet) {
-             NewEntrySheet(isPresented: $showEntrySheet) { title, text, date, mood, tags in
+             NewEntrySheet(isPresented: $showEntrySheet) { title, text, date, mood, tags, imageData in
                  let newEntry = JournalEntryVG(
                      title: title,
                      date: date,
@@ -107,13 +108,14 @@ struct JournalViewVG: View {
                      photoPath: nil,
                      tags: tags
                  )
-                 viewModel.addJournalEntry(newEntry)
+                 viewModel.addJournalEntry(newEntry, imageData: imageData)
              }
         }
     }
 }
 
 struct JournalEntryCard: View {
+    @EnvironmentObject var viewModel: ViewModelVG
     let entry: JournalEntryVG
     
     var body: some View {
@@ -151,6 +153,16 @@ struct JournalEntryCard: View {
                     }
                 }
                 
+                if let photoPath = entry.photoPath, let image = viewModel.loadImageFromDocuments(fileName: photoPath) {
+                    Image(uiImage: image)
+                        .resizable()
+                        .scaledToFill()
+                        .frame(maxWidth: .infinity)
+                        .frame(height: 150)
+                        .clipShape(RoundedRectangle(cornerRadius: 12))
+                        .padding(.vertical, 5)
+                }
+                
                 Text(entry.text)
                     .font(.body)
                     .foregroundColor(.white)
@@ -162,13 +174,16 @@ struct JournalEntryCard: View {
 
 struct NewEntrySheet: View {
     @Binding var isPresented: Bool
-    var onSave: (String, String, Date, String, [String]) -> Void
+    var onSave: (String, String, Date, String, [String], Data?) -> Void
     
     @State private var title: String = ""
     @State private var text: String = ""
     @State private var date: Date = Date()
     @State private var mood: String = "Neutral"
     @State private var selectedTags: Set<String> = []
+    
+    @State private var selectedItem: PhotosPickerItem? = nil
+    @State private var selectedImageData: Data? = nil
     
     let availableTags = [
         ("Water", "drop.fill", Color.cyan),
@@ -257,8 +272,48 @@ struct NewEntrySheet: View {
                          
                              .padding(.horizontal)
                          
+                         // Image Picker
+                         VStack(alignment: .leading) {
+                             Text("Observation Photo")
+                                 .font(.caption)
+                                 .foregroundColor(.gray)
+                                 .padding(.horizontal)
+                             
+                             PhotosPicker(selection: $selectedItem, matching: .images) {
+                                 if let data = selectedImageData, let uiImage = UIImage(data: data) {
+                                     Image(uiImage: uiImage)
+                                         .resizable()
+                                         .scaledToFill()
+                                         .frame(height: 150)
+                                         .frame(maxWidth: .infinity)
+                                         .cornerRadius(12)
+                                         .padding(.horizontal)
+                                 } else {
+                                     VStack {
+                                         Image(systemName: "camera.fill")
+                                             .font(.title2)
+                                         Text("Add Photo")
+                                              .font(.caption)
+                                     }
+                                     .frame(height: 100)
+                                     .frame(maxWidth: .infinity)
+                                     .background(Color.white.opacity(0.1))
+                                     .foregroundColor(.gray)
+                                     .cornerRadius(12)
+                                     .padding(.horizontal)
+                                 }
+                             }
+                             .onChange(of: selectedItem) { newItem in
+                                 Task {
+                                     if let data = try? await newItem?.loadTransferable(type: Data.self) {
+                                         selectedImageData = data
+                                     }
+                                 }
+                             }
+                         }
+                         
                          Button(action: {
-                             onSave(title, text, date, mood, Array(selectedTags))
+                             onSave(title, text, date, mood, Array(selectedTags), selectedImageData)
                              isPresented = false
                          }) {
                              Text("Save Entry")
@@ -275,6 +330,9 @@ struct NewEntrySheet: View {
                      }
                      .padding(.top)
                  }
+                 .onTapGesture {
+                     hideKeyboard()
+                 }
              }
              .navigationTitle("New Entry")
              .navigationBarTitleDisplayMode(.inline)
@@ -284,5 +342,11 @@ struct NewEntrySheet: View {
                  }
              }
         }
+    }
+}
+
+extension View {
+    func hideKeyboard() {
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }
 }
