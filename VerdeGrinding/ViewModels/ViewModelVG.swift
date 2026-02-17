@@ -170,11 +170,41 @@ class ViewModelVG: ObservableObject {
         saveProgress()
     }
     
-    func addJournalEntry(_ entry: JournalEntryVG) {
-        journalEntries.append(entry)
-        DataManagerVG.shared.saveJournalEntry(entry)
+    var sortedJournalEntries: [JournalEntryVG] {
+        journalEntries.sorted { $0.date > $1.date }
+    }
+    
+    func addJournalEntry(_ entry: JournalEntryVG, imageData: Data?) {
+        var entryWithImage = entry
+        
+        if let data = imageData {
+            if let path = saveImageToDocuments(data: data) {
+                entryWithImage.photoPath = path
+            }
+        }
+        
+        journalEntries.append(entryWithImage)
+        DataManagerVG.shared.saveJournalEntry(entryWithImage)
         // Reward XP
         addXP(amount: 20)
+    }
+    
+    private func saveImageToDocuments(data: Data) -> String? {
+        let fileName = UUID().uuidString + ".jpg"
+        let fileURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent(fileName)
+        
+        do {
+            try data.write(to: fileURL)
+            return fileName
+        } catch {
+            print("Error saving image: \(error)")
+            return nil
+        }
+    }
+    
+    func loadImageFromDocuments(fileName: String) -> UIImage? {
+        let fileURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent(fileName)
+        return UIImage(contentsOfFile: fileURL.path)
     }
     
     func addXP(amount: Int) {

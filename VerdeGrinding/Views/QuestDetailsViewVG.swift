@@ -17,7 +17,7 @@ struct QuestDetailsViewVG: View {
             VStack {
                 // Header Image Area
                 ZStack(alignment: .bottomLeading) {
-                    Image("quest_bg") // Placeholder or generic quest image
+                    Image("rare_flower_red") // Placeholder or generic quest image
                         .resizable()
                         .scaledToFill()
                         .frame(height: 250)

@@ -22,6 +22,7 @@ struct MainViewVG: View {
                     }
             }
         }
+        .ignoresSafeArea()
         .onAppear {
             // Splash delay
             DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {

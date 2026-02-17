@@ -52,15 +52,20 @@ struct CustomTabBarVG: View {
         }) {
             VStack(spacing: 4) {
                 Image(systemName: icon)
-                    .font(.system(size: 24))
+                    .font(.system(size: 22))
                     .foregroundColor(viewModel.selectedTab == tab ? viewModel.currentTheme.accentColor : .gray)
                 
                 if viewModel.selectedTab == tab {
                     Circle()
                         .fill(viewModel.currentTheme.accentColor)
                         .frame(width: 4, height: 4)
+                } else {
+                    Circle()
+                        .fill(Color.clear)
+                        .frame(width: 4, height: 4)
                 }
             }
+            .frame(maxWidth: .infinity)
         }
     }
 }

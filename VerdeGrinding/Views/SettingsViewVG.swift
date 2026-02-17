@@ -68,8 +68,12 @@ struct SettingsViewVG: View {
                         // General Settings
                         VStack(spacing: 1) {
                             // General Premium Upsell
-                            SettingsRow(icon: "crown.fill", title: "Go Premium", color: .glowingLime) {
-                                selectedThemeForPaywall = .forestPro // Default upsell
+                            let allPremiumOwned = ThemeModelVG.allThemes.filter { $0.isPremium }.allSatisfy { StoreManagerVG.shared.hasAccess(to: $0) }
+                            
+                            if !allPremiumOwned {
+                                SettingsRow(icon: "crown.fill", title: "Go Premium", color: .glowingLime) {
+                                    selectedThemeForPaywall = .forestPro // Default upsell
+                                }
                             }
                             
                             SettingsRow(icon: "arrow.clockwise", title: "Restore Purchases", color: .blue) {
@@ -99,7 +103,7 @@ struct SettingsViewVG: View {
             PaywallViewVG(theme: theme)
         }
         .sheet(isPresented: $showVideo) {
-            VideoView(url: URL(string: "https://www.youtube.com/embed/fA8HhK_m9fI")!) // Safe nature video
+            VideoView(url: URL(string: "https://www.youtube.com/watch?v=pZVdQLn_E5w")!) 
         }
         .sheet(isPresented: $showAbout) {
             AboutViewVG()

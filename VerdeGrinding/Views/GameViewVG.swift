@@ -19,12 +19,13 @@ struct GameViewVG: View {
         var isRemoved = false
     }
     
+    @State private var bgScale: CGFloat = 1.0
+    @State private var sparkleOpacity: Double = 0.0
     @State private var viewSize: CGSize = .zero
     
     var body: some View {
         ZStack {
-            viewModel.themeGradient.ignoresSafeArea()
-            
+            // Foreground Content
             if !isGameActive && !showResult {
                 // Start Screen
                 VStack(spacing: 20) {
@@ -52,50 +53,87 @@ struct GameViewVG: View {
                 // Game Area
                 GeometryReader { geometry in
                     ZStack {
+                        // Invisible background to capture taps
                         Color.clear
-                            .onAppear { viewSize = geometry.size }
-                            .onChange(of: geometry.size) { newSize in viewSize = newSize }
-                        Image("onboarding_slide_3")
-                            .resizable()
-                            .scaledToFill()
-                            .opacity(0.5)
-                            .ignoresSafeArea()
-                            .frame(maxHeight: .infinity)
+                            .onAppear { 
+                                viewSize = geometry.size 
+                                print("GAME_DEBUG: viewSize updated to \(viewSize)")
+                            }
+                            .onChange(of: geometry.size) { newSize in 
+                                viewSize = newSize 
+                                print("GAME_DEBUG: viewSize changed to \(viewSize)")
+                            }
+                        
+                        // Sparkles
+                        ForEach(0..<10, id: \.self) { i in
+                            Circle()
+                                .fill(viewModel.currentTheme.accentColor.opacity(0.3))
+                                .frame(width: CGFloat.random(in: 4...10), height: CGFloat.random(in: 4...10))
+                                .position(
+                                    x: CGFloat.random(in: 0...geometry.size.width),
+                                    y: CGFloat.random(in: 0...geometry.size.height)
+                                )
+                                .opacity(sparkleOpacity)
+                        }
                             
                         ForEach(targets) { target in
                             if !target.isRemoved {
                                 Button(action: { removeTarget(id: target.id) }) {
                                     Image("game_plant_target")
                                         .resizable()
-                                        .frame(width: 100, height: 100)
+                                        .frame(width: 80, height: 80)
                                         .shadow(color: .red.opacity(0.5), radius: 10)
                                 }
                                 .position(x: target.x, y: target.y)
-                                .transition(.scale)
+                                .transition(.asymmetric(
+                                    insertion: .scale(scale: 0.1).combined(with: .opacity),
+                                    removal: .scale(scale: 1.5).combined(with: .opacity)
+                                ))
                             }
                         }
                     }
                 }
+                .padding(.top, 120)
+                .padding(.bottom, 100)
+                .padding(.horizontal, 20)
                 
+                // Header (Above Game Area)
                 VStack {
-                    HStack {
-                        Text("Time: \(timeRemaining)")
-                            .font(.title2)
-                            .fontWeight(.bold)
-                            .foregroundColor(.white)
-                        Spacer()
+                    HStack(spacing: 0) {
+                        HStack {
+                            Text("Time: \(timeRemaining)")
+                                .font(.system(size: 18, weight: .bold))
+                                .foregroundColor(.white)
+                            Spacer()
+                        }
+                        .frame(width: 100)
+                        
                         Text("Score: \(score)")
-                            .font(.title2)
-                            .fontWeight(.bold)
+                            .font(.system(size: 22, weight: .black))
                             .foregroundColor(viewModel.currentTheme.accentColor)
+                            .frame(maxWidth: .infinity)
+                        
+                        HStack {
+                            Spacer()
+                            Button(action: { quitGame() }) {
+                                Image(systemName: "xmark.circle.fill")
+                                    .font(.system(size: 28))
+                                    .foregroundColor(.white.opacity(0.9))
+                            }
+                        }
+                        .frame(width: 100)
                     }
-                    .padding()
-                    .padding(.top, 40) // Extra padding for safe area since we handle custom header
-                    .background(viewModel.currentTheme.headerBackground)
+                    .padding(.horizontal)
+                    .padding(.top, 60)
+                    .padding(.bottom, 15)
+                    .background(
+                        viewModel.currentTheme.headerBackground
+                            .ignoresSafeArea(edges: .top)
+                            .shadow(color: Color.black.opacity(0.3), radius: 10, y: 5)
+                    )
                     
                     Spacer()
                 }
-                .ignoresSafeArea(edges: .top)
             }
             
             if showResult {
@@ -113,10 +151,32 @@ struct GameViewVG: View {
                         GlassButtonVG(title: "Collect Rewards", icon: "star.fill") {
                             viewModel.addXP(amount: score * 2)
                             showResult = false
+                            isGameActive = false
                         }
                     }
                 }
                 .padding()
+            }
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(
+            ZStack {
+                viewModel.themeGradient
+                
+                Image("onboarding_slide_3")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .scaleEffect(bgScale)
+                    .opacity(0.3)
+            }
+            .ignoresSafeArea()
+        )
+        .onAppear {
+            withAnimation(.easeInOut(duration: 5.0).repeatForever(autoreverses: true)) {
+                bgScale = 1.1
+            }
+            withAnimation(.easeInOut(duration: 2.0).repeatForever(autoreverses: true)) {
+                sparkleOpacity = 0.6
             }
         }
         .onReceive(timer) { _ in
@@ -143,15 +203,18 @@ struct GameViewVG: View {
     }
     
     func addTarget() {
-        // Use viewSize which is captured from GeometryReader
-        // Padding: 40px from sides, 120px from top (header), 40px from bottom (tab bar is already outside the view usually)
-        let width = viewSize.width > 0 ? viewSize.width : UIScreen.main.bounds.width
-        let height = viewSize.height > 0 ? viewSize.height : UIScreen.main.bounds.height
+        // Use the captured viewSize or fallback to screen bounds
+        let viewW = viewSize.width > 0 ? viewSize.width : UIScreen.main.bounds.width - 40
+        let viewH = viewSize.height > 0 ? viewSize.height : UIScreen.main.bounds.height - 300 // Safe fallback
         
-        let x = CGFloat.random(in: 40...width - 40)
-        let y = CGFloat.random(in: 120...height - 40)
+        // Target is 80x80. Calculate safe margins to keep it fully on screen.
+        let margin: CGFloat = 45 // 40 (half-size) + 5 slack
+        
+        let x = CGFloat.random(in: margin...(viewW - margin))
+        let y = CGFloat.random(in: margin...(viewH - margin))
         
         let newTarget = GameTarget(x: x, y: y)
+        print("GAME_DEBUG: Spawning target at (\(x), \(y)) within bounds (\(viewW), \(viewH))")
         withAnimation {
             targets.append(newTarget)
         }
@@ -170,5 +233,11 @@ struct GameViewVG: View {
     func endGame() {
         isGameActive = false
         showResult = true
+    }
+    
+    func quitGame() {
+        isGameActive = false
+        showResult = false
+        targets.removeAll()
     }
 }

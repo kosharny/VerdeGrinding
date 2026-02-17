@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DDE6797D2F43555E0079BE81 /* FirebaseAnalyticsCore in Frameworks */ = {isa = PBXBuildFile; productRef = DDE6797C2F43555E0079BE81 /* FirebaseAnalyticsCore */; };
-		DDE6797F2F43555E0079BE81 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = DDE6797E2F43555E0079BE81 /* FirebaseAuth */; };
-		DDE679812F43555E0079BE81 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = DDE679802F43555E0079BE81 /* FirebaseFirestore */; };
-		DDE679832F43555E0079BE81 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = DDE679822F43555E0079BE81 /* FirebaseMessaging */; };
+		2266797D2F43555E0079BE81 /* FirebaseAnalyticsCore in Frameworks */ = {isa = PBXBuildFile; productRef = 2266797C2F43555E0079BE81 /* FirebaseAnalyticsCore */; };
+        2266797F2F43555E0079BE81 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 2266797E2F43555E0079BE81 /* FirebaseAuth */; };
+        226679812F43555E0079BE81 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 226679802F43555E0079BE81 /* FirebaseFirestore */; };
+        226679832F43555E0079BE81 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 226679822F43555E0079BE81 /* FirebaseMessaging */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DDE6796D2F4354CD0079BE81 /* VerdeGrinding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VerdeGrinding.app; sourceTree = BUILT_PRODUCTS_DIR; };
+    2266796D2F4354CD0079BE81 /* VerdeGrinding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VerdeGrinding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		DDE6796F2F4354CD0079BE81 /* VerdeGrinding */ = {
+    2266796F2F4354CD0079BE81 /* VerdeGrinding */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = VerdeGrinding;
 			sourceTree = "<group>";
@@ -26,32 +26,32 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DDE6796A2F4354CD0079BE81 /* Frameworks */ = {
+    2266796A2F4354CD0079BE81 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDE679832F43555E0079BE81 /* FirebaseMessaging in Frameworks */,
-				DDE6797D2F43555E0079BE81 /* FirebaseAnalyticsCore in Frameworks */,
-				DDE6797F2F43555E0079BE81 /* FirebaseAuth in Frameworks */,
-				DDE679812F43555E0079BE81 /* FirebaseFirestore in Frameworks */,
+                     226679832F43555E0079BE81 /* FirebaseMessaging in Frameworks */,
+                     2266797D2F43555E0079BE81 /* FirebaseAnalyticsCore in Frameworks */,
+                     2266797F2F43555E0079BE81 /* FirebaseAuth in Frameworks */,
+                     226679812F43555E0079BE81 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DDE679642F4354CD0079BE81 = {
+    226679642F4354CD0079BE81 = {
 			isa = PBXGroup;
 			children = (
-				DDE6796F2F4354CD0079BE81 /* VerdeGrinding */,
-				DDE6796E2F4354CD0079BE81 /* Products */,
+                        2266796F2F4354CD0079BE81 /* VerdeGrinding */,
+                        2266796E2F4354CD0079BE81 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		DDE6796E2F4354CD0079BE81 /* Products */ = {
+    2266796E2F4354CD0079BE81 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DDE6796D2F4354CD0079BE81 /* VerdeGrinding.app */,
+                        2266796D2F4354CD0079BE81 /* VerdeGrinding.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,71 +59,71 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DDE6796C2F4354CD0079BE81 /* VerdeGrinding */ = {
+    2266796C2F4354CD0079BE81 /* VerdeGrinding */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DDE679782F4354CF0079BE81 /* Build configuration list for PBXNativeTarget "VerdeGrinding" */;
+			buildConfigurationList = 226679782F4354CF0079BE81 /* Build configuration list for PBXNativeTarget "VerdeGrinding" */;
 			buildPhases = (
-				DDE679692F4354CD0079BE81 /* Sources */,
-				DDE6796A2F4354CD0079BE81 /* Frameworks */,
-				DDE6796B2F4354CD0079BE81 /* Resources */,
+                           226679692F4354CD0079BE81 /* Sources */,
+                           2266796A2F4354CD0079BE81 /* Frameworks */,
+                           2266796B2F4354CD0079BE81 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				DDE6796F2F4354CD0079BE81 /* VerdeGrinding */,
+                                            2266796F2F4354CD0079BE81 /* VerdeGrinding */,
 			);
 			name = VerdeGrinding;
 			packageProductDependencies = (
-				DDE6797C2F43555E0079BE81 /* FirebaseAnalyticsCore */,
-				DDE6797E2F43555E0079BE81 /* FirebaseAuth */,
-				DDE679802F43555E0079BE81 /* FirebaseFirestore */,
-				DDE679822F43555E0079BE81 /* FirebaseMessaging */,
+                                          2266797C2F43555E0079BE81 /* FirebaseAnalyticsCore */,
+                                          2266797E2F43555E0079BE81 /* FirebaseAuth */,
+                                          226679802F43555E0079BE81 /* FirebaseFirestore */,
+                                          226679822F43555E0079BE81 /* FirebaseMessaging */,
 			);
 			productName = VerdeGrinding;
-			productReference = DDE6796D2F4354CD0079BE81 /* VerdeGrinding.app */;
+			productReference = 2266796D2F4354CD0079BE81 /* VerdeGrinding.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DDE679652F4354CD0079BE81 /* Project object */ = {
+    226679652F4354CD0079BE81 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2620;
 				LastUpgradeCheck = 2620;
 				TargetAttributes = {
-					DDE6796C2F4354CD0079BE81 = {
+                    2266796C2F4354CD0079BE81 = {
 						CreatedOnToolsVersion = 26.2;
 					};
 				};
 			};
-			buildConfigurationList = DDE679682F4354CD0079BE81 /* Build configuration list for PBXProject "VerdeGrinding" */;
+			buildConfigurationList = 226679682F4354CD0079BE81 /* Build configuration list for PBXProject "VerdeGrinding" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = DDE679642F4354CD0079BE81;
+			mainGroup = 226679642F4354CD0079BE81;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				DDE6797B2F43555E0079BE81 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+                                 2266797B2F43555E0079BE81 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = DDE6796E2F4354CD0079BE81 /* Products */;
+			productRefGroup = 2266796E2F4354CD0079BE81 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DDE6796C2F4354CD0079BE81 /* VerdeGrinding */,
+                       2266796C2F4354CD0079BE81 /* VerdeGrinding */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DDE6796B2F4354CD0079BE81 /* Resources */ = {
+    2266796B2F4354CD0079BE81 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -133,7 +133,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DDE679692F4354CD0079BE81 /* Sources */ = {
+    226679692F4354CD0079BE81 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -143,7 +143,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		DDE679762F4354CF0079BE81 /* Debug */ = {
+    226679762F4354CF0079BE81 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -207,7 +207,7 @@
 			};
 			name = Debug;
 		};
-		DDE679772F4354CF0079BE81 /* Release */ = {
+    226679772F4354CF0079BE81 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -264,7 +264,7 @@
 			};
 			name = Release;
 		};
-		DDE679792F4354CF0079BE81 /* Debug */ = {
+    226679792F4354CF0079BE81 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -302,7 +302,7 @@
 			};
 			name = Debug;
 		};
-		DDE6797A2F4354CF0079BE81 /* Release */ = {
+    2266797A2F4354CF0079BE81 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -343,20 +343,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DDE679682F4354CD0079BE81 /* Build configuration list for PBXProject "VerdeGrinding" */ = {
+    226679682F4354CD0079BE81 /* Build configuration list for PBXProject "VerdeGrinding" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DDE679762F4354CF0079BE81 /* Debug */,
-				DDE679772F4354CF0079BE81 /* Release */,
+                                   226679762F4354CF0079BE81 /* Debug */,
+                                   226679772F4354CF0079BE81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DDE679782F4354CF0079BE81 /* Build configuration list for PBXNativeTarget "VerdeGrinding" */ = {
+    226679782F4354CF0079BE81 /* Build configuration list for PBXNativeTarget "VerdeGrinding" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DDE679792F4354CF0079BE81 /* Debug */,
-				DDE6797A2F4354CF0079BE81 /* Release */,
+                                   226679792F4354CF0079BE81 /* Debug */,
+                                   2266797A2F4354CF0079BE81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -364,7 +364,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		DDE6797B2F43555E0079BE81 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+    2266797B2F43555E0079BE81 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
 			requirement = {
@@ -375,27 +375,27 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		DDE6797C2F43555E0079BE81 /* FirebaseAnalyticsCore */ = {
+    2266797C2F43555E0079BE81 /* FirebaseAnalyticsCore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DDE6797B2F43555E0079BE81 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 2266797B2F43555E0079BE81 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAnalyticsCore;
 		};
-		DDE6797E2F43555E0079BE81 /* FirebaseAuth */ = {
+    2266797E2F43555E0079BE81 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DDE6797B2F43555E0079BE81 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 2266797B2F43555E0079BE81 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
 		};
-		DDE679802F43555E0079BE81 /* FirebaseFirestore */ = {
+    226679802F43555E0079BE81 /* FirebaseFirestore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DDE6797B2F43555E0079BE81 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 2266797B2F43555E0079BE81 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
 		};
-		DDE679822F43555E0079BE81 /* FirebaseMessaging */ = {
+    226679822F43555E0079BE81 /* FirebaseMessaging */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DDE6797B2F43555E0079BE81 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 2266797B2F43555E0079BE81 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseMessaging;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = DDE679652F4354CD0079BE81 /* Project object */;
+	rootObject = 226679652F4354CD0079BE81 /* Project object */;
 }

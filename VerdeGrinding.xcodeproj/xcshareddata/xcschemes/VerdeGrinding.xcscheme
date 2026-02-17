@@ -15,7 +15,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DDE6796C2F4354CD0079BE81"
+               BlueprintIdentifier = "2266796C2F4354CD0079BE81"
                BuildableName = "VerdeGrinding.app"
                BlueprintName = "VerdeGrinding"
                ReferencedContainer = "container:VerdeGrinding.xcodeproj">
@@ -44,7 +44,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DDE6796C2F4354CD0079BE81"
+            BlueprintIdentifier = "2266796C2F4354CD0079BE81"
             BuildableName = "VerdeGrinding.app"
             BlueprintName = "VerdeGrinding"
             ReferencedContainer = "container:VerdeGrinding.xcodeproj">
@@ -64,7 +64,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DDE6796C2F4354CD0079BE81"
+            BlueprintIdentifier = "2266796C2F4354CD0079BE81"
             BuildableName = "VerdeGrinding.app"
             BlueprintName = "VerdeGrinding"
             ReferencedContainer = "container:VerdeGrinding.xcodeproj">
